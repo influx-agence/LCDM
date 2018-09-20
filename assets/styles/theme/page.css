@@ -1,0 +1,172 @@
+/* 
+
+  Page themes
+
+ */
+
+body {
+  /* border-left: 1px solid var(--c-border);
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container-rg);
+  padding-left: calc(1 * var(--grid-gutter));
+  padding-right: calc(1 * var(--grid-gutter));
+  width: 100%; */
+
+  &:before {
+    /* background-color: var(--c-textLight);
+    content: " ";
+    display: block;
+    height: 100vh;
+    left: calc(-1 * var(--grid-gutter));
+    left: -1px;
+    position: absolute;
+    top: -100px;
+    bottom: 0;
+    transform: translateY(-100%);
+    width: 1px; */
+  }
+}
+
+/* …failing attempt at having the line run underneath the entire browser space */
+/* html {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) calc(50% - 0.5px),
+    rgba(0, 0, 0, 1) calc(50%),
+    rgba(0, 0, 0, 0) calc(50% + 0.5px)
+  );
+} */
+
+/* 
+
+  Page themes
+
+ */
+
+.page-index {
+  background-color: #fbf06f;
+  background-color: var(--c-neutral);
+}
+
+.page-index .Nav-list {
+  background-color: initial !important;
+}
+
+.page-index .promote {
+  position: relative;
+  z-index: 1;
+
+  & a {
+    text-shadow: initial;
+  }
+}
+
+/* 
+
+  Essay drop caps
+
+ */
+.Scope-post-dropcap div > p:first-of-type:first-letter {
+  float: left;
+  font-family: var(--ff-lede);
+  font-size: 3em;
+  line-height: 1;
+  /* margin-top: -1px; */
+  padding-top: 3px;
+  padding-right: 0.666em;
+  padding-bottom: 0.25em;
+
+  @media (--md) {
+    font-size: 3.25em;
+  }
+  @media (--lg) {
+    padding-right: 0.5em;
+    padding-top: 4px;
+    font-size: 4.5em;
+  }
+}
+
+/* 
+
+  Button theme
+
+ */
+
+.Button {
+  padding-top: 1px;
+  @media (--lg) {
+    padding-top: 0.5px;
+  }
+}
+
+/* 
+
+  Separators & things 
+
+ */
+
+.MetaSeparator {
+  display: inline-block;
+  margin-left: calc(0.5 * var(--responsive-typography-space));
+  margin-right: calc(0.5 * var(--responsive-typography-space));
+}
+
+.LinkSeparator {
+  margin-left: var(--s-3a);
+  margin-right: var(--s-3a);
+  padding-top: var(--s-3b);
+  padding-bottom: var(--s-3b);
+
+  @media (--sm) {
+    padding-top: var(--s-4a);
+    padding-bottom: var(--s-4a);
+  }
+}
+
+/* 
+
+  Interesting hero, etc
+
+ */
+
+.NewsletterHero:before {
+  /* background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(212, 203, 184, 0.85);
+  background-color: rgba(228, 226, 220, 0.9); */
+  background-color: rgba(239, 236, 229, 0.92);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.NewsletterHero {
+  background-color: var(--c-text);
+  /* background-image: url(/images/_slump.jpg);
+  background-image: url(/images/_overcast-night.jpg);
+  background-image: url(/images/_spys.jpg);
+  background-image: url(/images/_kiss.jpg);*/
+  background-image: url("https://res.cloudinary.com/pw-img-cdn/image/upload/v1531451032/okok/_kiss.jpg");
+  /* background-position-y: 80%; */
+  background-position-y: 0;
+  position: relative;
+}
+
+.NewsletterHero p,
+.NewsletterHero {
+  /* color: var(--c-bg); */
+}
+
+/* turn off footer rule until there's an archive list */
+.page-interesting,
+.page-index {
+  & .footer hr {
+    background-color: transparent !important;
+  }
+}

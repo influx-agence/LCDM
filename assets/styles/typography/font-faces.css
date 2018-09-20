@@ -1,0 +1,69 @@
+/*
+
+  Font-faces
+
+ */
+
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-RegularItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-text);
+  src: url("~static/fonts/TiemposText-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-lede);
+  src: url("~static/fonts/TiemposHeadline-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* fatness */
+
+@font-face {
+  font-family: var(--ff-heading);
+  src: url("~static/fonts/GintoNord-Thin.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-heading);
+  src: url("~static/fonts/GintoNord-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-heading);
+  src: url("~static/fonts/GintoNord-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: var(--ff-title);
+  src: url("~static/fonts/GintoNord-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
