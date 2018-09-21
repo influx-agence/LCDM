@@ -21,6 +21,6 @@ module.exports = {
   ],
 
   api: function(isStatic) {
-    return { browserBaseURL: isStatic ? "https://callumflack.design" : "" };
+    return { browserBaseURL: isStatic ? "https://lacourdesmiracles.netlify.com" : "" };
   }
 };

@@ -1,6 +1,6 @@
 {
-  "name": "callumflackdesign",
-  "alias": ["callumflack.design", "www.callumflack.design"],
+  "name": "lacourdesmiracles",
+  "alias": ["lacourdesmiracles.tattoo", "www.lacourdesmiracles.tattoo"],
   "env": {
     "NODE_ENV": "production"
   }
